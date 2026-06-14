@@ -3,7 +3,6 @@
 A MERN-based Event Booking Web Application built with **React + Vite**. Users can browse and book events through a clean, responsive UI that communicates with a dedicated REST API backend.
 
 🔗 **Live Demo:** [events-16-04-2007.web.app](https://events-16-04-2007.web.app)
-
 🔗 **Backend Repo:** [aartisingh07/events-BE](https://github.com/aartisingh07/events-BE)
 
 ---
@@ -71,6 +70,18 @@ npm run build
 ```
 
 The production-ready output will be in the `dist/` folder.
+
+---
+
+## ⚙️ Environment Setup
+
+Make sure the backend API URL is configured correctly. You can set it in a `.env` file at the root:
+
+```env
+VITE_API_URL= https://your-backend-url.com
+```
+
+> Update this URL to point to the deployed backend in production.
 
 ---
 
