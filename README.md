@@ -74,18 +74,6 @@ The production-ready output will be in the `dist/` folder.
 
 ---
 
-## ⚙️ Environment Setup
-
-Make sure the backend API URL is configured correctly. You can set it in a `.env` file at the root:
-
-```env
-VITE_API_URL=http://localhost:5000
-```
-
-> Update this URL to point to the deployed backend in production.
-
----
-
 ## 📦 Available Scripts
 
 | Script          | Description                          |
