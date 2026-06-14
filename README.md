@@ -1,2 +1,2 @@
 # Booking Events
-* MERN-based project *
+* MERN-based project
