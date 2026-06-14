@@ -14,7 +14,7 @@ const ShowBooking = () => {
 
   const fetchBookings = () => {
     axios
-      .get("https://events-be-4j58.onrender.com/get")
+      .get(`${import.meta.env.VITE_API_URL}/get`)
       .then((res) => setBookings(res.data))
       .catch((err) => console.error("Error fetching bookings:", err));
   };
@@ -29,7 +29,7 @@ const ShowBooking = () => {
 
   const handleDelete = (id) => {
     axios
-      .delete(`https://events-be-4j58.onrender.com/delete/${id}`)
+      .delete(`${import.meta.env.VITE_API_URL}/delete/${id}`)
       .then(() => setBookings(bookings.filter((b) => b._id !== id)))
       .catch((err) => console.error("Error deleting:", err));
   };
@@ -50,7 +50,7 @@ const ShowBooking = () => {
   const handleUpdateSubmit = (e) => {
     e.preventDefault();
     axios
-      .put(`https://events-be-4j58.onrender.com/update/${selectedId}`, { name, event, time, phone })
+      .put(`${import.meta.env.VITE_API_URL}/update/${selectedId}`, { name, event, time, phone })
       .then(() => {
         fetchBookings();
         closeModal();

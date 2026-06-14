@@ -10,7 +10,7 @@ const AddBooking = () => {
 
   let handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("https://events-be-4j58.onrender.com/add", { name, event, time, phone })
+    axios.post(`${import.meta.env.VITE_API_URL}/add`, { name, event, time, phone })
       .then(() => {
         alert("Booking successful!");
         setName("");
