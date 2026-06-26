@@ -2,8 +2,6 @@
 
 A MERN-based Event Booking Web Application built with **React + Vite**. Users can browse and book events through a clean, responsive UI that communicates with a dedicated REST API backend.
 
-🔗 **Live Demo:** [events-16-04-2007.web.app](https://events-16-04-2007.web.app)
-
 🔗 **Backend Repo:** [aartisingh07/events-BE](https://github.com/aartisingh07/events-BE)
 
 ---
